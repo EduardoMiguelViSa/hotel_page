@@ -1,0 +1,119 @@
+<html>
+ <head>
+  <title>Hotel</title>
+  <link rel="stylesheet" href="C:\Users\Abraham\Desktop\Pág. Hotel\IconHoverEffects\css/default.css">  
+  <link rel="stylesheet" href="C:\Users\Abraham\Desktop\Pág. Hotel\IconHoverEffects\css/component.css">  
+  <link rel="stylesheet" href="C:\Users\Abraham\Desktop\Pág. Hotel\Iconos\css/font-awesome.css">  
+  <link rel="stylesheet" href="C:\Users\Abraham\Desktop\Pág. Hotel\Iconos\css/font-awesome.min.css">  
+  <link rel="stylesheet" href="w3.css">
+  <link rel="shortcut icon" href="Icono.png" />
+ <style type="text/css">   
+a:link   
+{   
+ text-decoration:none;   
+}   
+</style>
+<style>
+.cambioColor {color:black;}
+.cambioColor:hover {color:white;}
+</style>
+<style>
+.cambioColor1 {color:white;}
+.cambioColor1:hover {color:black;}
+</style>
+  <style>
+   .mySlides {display:none}
+   .w3-left, .w3-right, .w3-badge {cursor:pointer}
+   .w3-badge {height:13px;width:13px;padding:0}
+  </style>
+ </head>
+ <body>
+ 
+ 
+<!-- Sidebar -->
+<center><div class="w3-sidebar w3-bar-block w3-padding w3-xlarge w3-text-orange" style="display:none" id="mySidebar">
+  <center><button onclick="w3_close()" class="w3-btn w3-orange w3-xlarge">☰</i></button></center>
+  <p><center><a href="[1] Pág. Hotel.html" class="w3-bar-item w3-button"><center><i class="fa fa-home"></i>   <font color="black" class="cambioColor face="century gothic"">Principal</font></center></a></center>
+  <p><center><a href="#" class="w3-bar-item w3-button"><center><i class="fa fa-compass"></i>   <font color="black" class="cambioColor" face="century gothic">Destinos</font></center></a></center>  
+  <p><center><a href="Contáctanos.html" class="w3-bar-item w3-button"><center><i class="fa fa-mobile"></i>   <font color="black" class="cambioColor" face="century gothic">Contáctanos</font></center></a></center>  <p><center><a href="#" class="w3-bar-item w3-button"><center><i class="fa fa fa-envelope-o"></i>   <font color="black" class="cambioColor" face="century gothic">Escribenos</font></center></a></center>
+</div></center>
+<!-- Page Content -->
+<center><div class="w3-teal">
+  <center><button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button></center>
+  <center><div class="w3-container"></center></div>
+   <center><img src="Logo.png" width="300"></center>
+</div></center>
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.width = "100%";
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+  
+  
+<center><div class="w3-display-container w3-opacity-min w3-hover-opacity-off w3-content" style="max-width:800px;transition:0.5s"">
+  <i class="fa fa-star w3-text-orange"></i>   <button class="w3-orange w3-btn w3-round" style="cursor:default"><font color="white" face="century gothic">LO MÁS DESTACADO</font></button>   <i class="fa fa-star w3-text-orange"></i>
+  <P><img class="mySlides" src="Promocion.png" style="width:100%">
+  <img class="mySlides" src="Promocionn.png" style="width:100%">
+  <img class="mySlides" src="Promocionnn.png" style="width:100%">
+  <img class="mySlides" src="Promocionnnn.png" style="width:100%">
+      <div class="w3-display-middle w3-display-hover w3-large">
+      <a href="#"><button type="button" class="w3-green w3-animate-opacity w3-btn w3-round"><font face="century gothic"><b>Ver oferta</b></font></button></a>
+    </div>
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)"><i class="fa fa-arrow-left"></i></div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)"><i class="fa fa-arrow-right"></i></div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div></center>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+
+<br><center><div class="w3-display-container w3-opacity-min w3-hover-opacity-off w3-content" style="max-width:800px;transition:0.5s">
+  <i class="fa fa-info-circle w3-text-Cyan"></i>   <button class="w3-Cyan w3-btn w3-round" style="cursor:default"><font color="white" face="century gothic">CONÓCENOS</font></button>   <i class="fa fa-info-circle w3-text-Cyan"></i>
+<TABLE class="w3-panel w3-card w3-CYAN hi-icon-wrap hi-icon-effect-6" style="max-width:800px;transition:0.5s">
+<td><CENTER><font face="century gothic" color="white">Bienvenido a SHANGRI - LA
+<P>SHANGRI - LA es un líder mundial en hospedaje, que ofrece servicios de reservación mediante su propia red de sitios web traducidos y centros de atención telefónica.
+<P>SHANGRI - LA proporciona a sus clientes una de las selecciones más amplias de hospedaje en línea con más de cientos de miles establecimientos en todo el mundo, incluyendo hoteles independientes, grandes cadenas hoteleras y aparthoteles. La compañía ofrece una fuente de compras única en cuanto a los precios, los servicios y la disponibilidad del hotel, y también se especializa en brindar hospedaje a los viajeros durante los períodos en los que no hay disponibilidad.
+				 <br><id class="hi-icon hi-icon-star" style="cursor:default"></id>
+					<id class="hi-icon hi-icon-star" style="cursor:default"></id>
+					<id class="hi-icon hi-icon-star" style="cursor:default"></id>
+					<id class="hi-icon hi-icon-star" style="cursor:default"></id></br>
+				</div></FONT></CENTER></TD>
+</table>
+  </div></center></br>
+</td>
+</table>
+
+
+ </body>
+</html>

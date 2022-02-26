@@ -1,0 +1,140 @@
+<html>
+ <head>
+  <title>Hotel</title>
+  <link rel="stylesheet" href="IconHoverEffects\css/default.css">  
+  <link rel="stylesheet" href="IconHoverEffects\css/component.css">  
+  <link rel="stylesheet" href="Iconos\css/font-awesome.css">  
+  <link rel="stylesheet" href="Iconos\css/font-awesome.min.css">  
+  <link rel="stylesheet" href="w3.css">
+  <link rel="shortcut icon" href="Icono.png" />
+ <style type="text/css">   
+a:link   
+{   
+ text-decoration:none;   
+}   
+</style>
+<style>
+.cambioColor {color:black;}
+.cambioColor:hover {color:white;}
+</style>
+<style>
+.cambioColor1 {color:white;}
+.cambioColor1:hover {color:black;}
+</style>
+  <style>
+   .mySlides {display:none}
+   .w3-left, .w3-right, .w3-badge {cursor:pointer}
+   .w3-badge {height:13px;width:13px;padding:0}
+  </style>
+ </head>
+ <body>
+ 
+ 
+<!-- Sidebar -->
+<center><div class="w3-sidebar w3-bar-block w3-padding w3-xlarge w3-text-orange" style="display:none" id="mySidebar">
+  <center><button onclick="w3_close()" class="w3-btn w3-orange w3-xlarge">☰</i></button></center>
+  
+  <p><center><a href="index.html" class="w3-bar-item w3-button"><center><i class="fa fa-home"></i><font color="black" class="cambioColor" face="century gothic">Principal</font></center></a></center>
+  <p><center><a href="Destinos.html" class="w3-bar-item w3-button"><center><i class="fa fa-compass"></i><font color="black" class="cambioColor" face="century gothic">Destinos</font></center></a></center>  
+  <p><center><a href="Contactanos.html" class="w3-bar-item w3-button"><center><i class="fa fa-mobile"></i>   <font color="black" class="cambioColor" face="century gothic">Contáctanos</font></center></a></center>  <p><center><a href="Contactanos.html" class="w3-bar-item w3-button"><center><i class="fa fa fa-STAR-o"></i>   <font color="black" class="cambioColor" face="century gothic">GRACIAS POR SU PREFERENCIA</font> <i class="fa fa fa-STAR-o"></i></center></a></center>
+    
+</div></center>
+<!-- Page Content -->
+<center><div class="w3-teal">
+  <center><button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button></center>
+  <center><div class="w3-container"></center></div>
+</div></center>
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.width = "100%";
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+  
+
+<p><center><div class="w3-display-container w3-opacity-min w3-hover-opacity-off w3-content" style="max-width:800px;transition:0.5s">
+  <i class="fa fa-bed w3-text-Teal"></i>   <button class="w3-teal w3-btn w3-round" style="cursor:default"><font color="white" face="century gothic">ESCOGE TU HABITACIÓN</font></button>   <i class="fa fa-bed w3-text-Indigo"></i>
+  
+<TABLE class="w3-panel w3-card" style="max-width:800px;transition:0.5s;cursor:default">
+<td class="w3-Teal"><CENTER><font face="century gothic" color="white">
+Arma tu viaje con SHANGRI - LA
+
+<p>Los momentos que pasamos con las personas que amamos son buenos, pero pasarlos en nuestras instalaciones los hacen excelentes.
+		</FONT></CENTER></TD>
+</table></center></div>	
+	
+	
+	<p><center><div class="w3-display-container w3-opacity-min w3-hover-opacity-off w3-content" style="max-width:800px;transition:0.5s">
+  <button class="w3-teal w3-btn w3-round" style="cursor:default"><font color="white" face="century gothic">Habitación individual</font></button></div>
+
+  
+<TABLE CELLPADDING="10" class="w3-panel w3-display-container w3-opacity-min w3-hover-opacity-off w3-content"" style="max-width:800px;transition:0.5s;cursor:default">	
+<td>
+<div class="w3-content w3-display-container">
+<div class="w3-display-container mySlides">
+  <img src="Mci1.png" width="300">
+  <div class="w3-display-bottomleft w3-small w3-container w3-padding-16 w3-black">
+    ¡Quedate aquí!
+  </div>
+</div>
+<div class="w3-display-container mySlides">
+  <img src="Mci2.png" width="300">
+</div>
+<div class="w3-display-container mySlides">
+  <img src="Mci3.png" width="300">
+</div>
+<div class="w3-display-container mySlides">
+  <img src="Mci4.png" width="300">
+</div>
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+</td>
+<td CLASS="w3-Brown"><CENTER><font face="century gothic" color="white"><b>Habitación Superior</b>
+<p><font color="black">Especificaciónes:</font>
+<p><i class="fa fa-television w3-text-white w3-hover-shadow"></i> <i class="fa fa-bath w3-text-white w3-hover-shadow"></i> <i class="fa fa-snowflake-o w3-text-white w3-hover-shadow"></i> <i class="fa fa-arrows-alt w3-text-white w3-hover-shadow"></i> <i class="fa fa-sun-o w3-text-white w3-hover-shadow"></i></p>
+<p>• Una cama individual • 55 m² • Balcón con vistas • TV de pantalla plana • Aire acondicionado • Baño privado • Balcón • Vistas • Canales vía satélite • Canales por cable • TV de pantalla plana • Aire acondicionado • Escritorio • Ventilador • Sofá • Mosquitera • Armario • Secador de pelo • Artículos de aseo gratis • Aseo • Baño • Bañera o ducha • Minibar • Zona de comedor • Servicio de despertador
+<p><a href="https://join.booking.com/?lang=es&utm_source=topbar&utm_medium=frontend&aid=1194661"><button class="w3-btn w3-round-xxlarge w3-border w3-border-white"><b>Reservaré <i class="fa fa-usd w3-text-white w3-hover-shadow"></i></b></button></a>
+</FONT></CENTER></TD>
+</table>
+
+
+<table>
+<td><a href="F1.html"><button class="w3-btn w3-round-xxlarge w3-border w3-border-black"><b><font color="black">Regresar</b></button></a></td>
+</table>
+
+
+<table>
+<td></td>
+</table>
+
+
+<table>
+<td></td>
+</table>
+
+
+</center>
+
+ </body>
+</html>
